@@ -1,21 +1,23 @@
 <template>
     <div>
-        <div class="innerBox">
-             {{startData}}
+        <div class="app">
+            <date-picker></date-picker>
         </div>
     </div>
 </template>
 <script>
+import datePicker from './date-picker'
 export default {
     data(){
         return {
-            startData:'hello world'
+            datePickerValue:''
         }
+    },
+    components:{
+        datePicker
     }
 }
 </script>
 <style lang="less">
-    .innerBox {
-        color: red;
-    }
+  
 </style>
